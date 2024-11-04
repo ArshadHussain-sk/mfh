@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(v.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#movie-filter {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+#movie-filter:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#film-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#film-list li {
+    background-color: whit;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#film-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 252, 252, 0.15);
+}
+
+.film-info {
+    text-align: center;
+}
+.bio {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.bio-content {
+    display: none;
+    margin-top: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.film-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: rgb(244, 238, 238);
+}
+
+.film-info p {
+    margin: 0;
+    color: rgb(210, 200, 200);
+    font-size: 14px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#close-popup {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    background-color: #0056b3;
+}

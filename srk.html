@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shah Rukh Khan Films</title>
+    <link rel="stylesheet" href="srk.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: black ;">Shah Rukh Khan Films</h1>
+        <div class="filter-container">
+            <select id="movie-filter">
+                <option value="all">All Movies</option>
+                <option value="favorites">Favorite Movies</option>
+                <option value="top-rated">Top Rated Movies</option>
+            </select>
+        </div>
+        <div class="bio" onclick="toggleBio()" style="color: whitesmoke; font-size: larger;">BIOGRAPHY</div>
+        <div class="bio-content" id="bio-content">
+    <p>Shah Rukh Khan, often referred to as SRK or the "King of Bollywood," is one of the most celebrated actors in the Indian film industry. Born on November 2, 1965, in New Delhi, he began his career in television before making his film debut in 1992 with 'Deewana'. Over the years, he has starred in numerous iconic films such as 'Dilwale Dulhania Le Jayenge', 'Kuch Kuch Hota Hai', and 'My Name Is Khan'. SRK is known for his versatility, charm, and strong screen presence, earning numerous awards and a massive global fan base. He is also a successful film producer and co-owner of the Kolkata Knight Riders, a team in the Indian Premier League (IPL).</p>
+</div>
+
+        <ul id="film-list">
+            <li data-title="Deewana" data-year="1992" data-rating="7.2">
+                <div class="film-info">
+                    <h2>Deewana</h2>
+                    <p>1992 • Rating: 7.2</p>
+                </div>
+            </li>
+            <li data-title="Baazigar" data-year="1993" data-rating="7.6" data-favourite="true">
+                <div class="film-info">
+                    <h2>Baazigar</h2>
+                    <p>1993 • Rating: 7.6</p>
+                </div>
+            </li>
+            <li data-title="Darr" data-year="1993" data-rating="7.1">
+                <div class="film-info">
+                    <h2>Darr</h2>
+                    <p>1993 • Rating: 7.1</p>
+                </div>
+            </li>
+            <li data-title="Kabhi Haan Kabhi Naa" data-year="1994" data-rating="7.5">
+                <div class="film-info">
+                    <h2>Kabhi Haan Kabhi Naa</h2>
+                    <p>1994 • Rating: 7.5</p>
+                </div>
+            </li>
+            <li data-title="Dilwale Dulhania Le Jayenge" data-year="1995" data-rating="8.1">
+                <div class="film-info">
+                    <h2>Dilwale Dulhania Le Jayenge</h2>
+                    <p>1995 • Rating: 8.1</p>
+                </div>
+            </li>
+            <li data-title="Zamaana Deewana" data-year="1995" data-rating="5.0">
+                <div class="film-info">
+                    <h2>Zamaana Deewana</h2>
+                    <p>1995 • Rating: 5.0</p>
+                </div>
+            </li>
+            <li data-title="Karan Arjun" data-year="1995" data-rating="6.9">
+                <div class="film-info">
+                    <h2>Karan Arjun</h2>
+                    <p>1995 • Rating: 6.9</p>
+                </div>
+            </li>
+            <li data-title="Koyla" data-year="1997" data-rating="5.6">
+                <div class="film-info">
+                    <h2>Koyla</h2>
+                    <p>1997 • Rating: 5.6</p>
+                </div>
+            </li>
+            <li data-title="Dil Se" data-year="1998" data-rating="7.9" data-favourite="true">
+                <div class="film-info">
+                    <h2>Dil Se</h2>
+                    <p>1998 • Rating: 7.9</p>
+                </div>
+            </li>
+            <li data-title="Kuch Kuch Hota Hai" data-year="1998" data-rating="7.4" data-favourite="true">
+                <div class="film-info">
+                    <h2>Kuch Kuch Hota Hai</h2>
+                    <p>1998 • Rating: 7.4</p>
+                </div>
+            </li>
+            <li data-title="Hum Tumhare Hain Sanam" data-year="2002" data-rating="4.9">
+                <div class="film-info">
+                    <h2>Hum Tumhare Hain Sanam</h2>
+                    <p>2002 • Rating: 4.9</p>
+                </div>
+            </li>
+            <li data-title="Devdas" data-year="2002" data-rating="7.0">
+                <div class="film-info">
+                    <h2>Devdas</h2>
+                    <p>2002 • Rating: 7.0</p>
+                </div>
+            </li>
+            <li data-title="Kabhi Khushi Kabhie Gham" data-year="2001" data-rating="7.4" data-favourite="true">
+                <div class="film-info">
+                    <h2>Kabhi Khushi Kabhie Gham</h2>
+                    <p>2001 • Rating: 7.4</p>
+                </div>
+            </li>
+            <li data-title="Chalte Chalte" data-year="2003" data-rating="6.0">
+                <div class="film-info">
+                    <h2>Chalte Chalte</h2>
+                    <p>2003 • Rating: 6.0</p>
+                </div>
+            </li>
+            <li data-title="Kal Ho Naa Ho" data-year="2003" data-rating="8.0" data-favourite="true">
+                <div class="film-info">
+                    <h2>Kal Ho Naa Ho</h2>
+                    <p>2003 • Rating: 8.0</p>
+                </div>
+            </li>
+            <li data-title="Main Hoon Na" data-year="2004" data-rating="7.0">
+                <div class="film-info">
+                    <h2>Main Hoon Na</h2>
+                    <p>2004 • Rating: 7.0</p>
+                </div>
+            </li>
+            <li data-title="Veer-Zaara" data-year="2004" data-rating="7.9">
+                <div class="film-info">
+                    <h2>Veer-Zaara</h2>
+                    <p>2004 • Rating: 7.9</p>
+                </div>
+            </li>
+            <li data-title="Don" data-year="2006" data-rating="7.2" data-favourite="true">
+                <div class="film-info">
+                    <h2>Don</h2>
+                    <p>2006 • Rating: 7.2</p>
+                </div>
+            </li>
+            <li data-title="Chak De! India" data-year="2007" data-rating="8.0">
+                <div class="film-info">
+                    <h2>Chak De! India</h2>
+                    <p>2007 • Rating: 8.0</p>
+                </div>
+            </li>
+            <li data-title="Om Shanti Om" data-year="2007" data-rating="6.7">
+                <div class="film-info">
+                    <h2>Om Shanti Om</h2>
+                    <p>2007 • Rating: 6.7</p>
+                </div>
+            </li>
+            <li data-title="Rab Ne Bana Di Jodi" data-year="2008" data-rating="7.1" data-favourite="true">
+                <div class="film-info">
+                    <h2>Rab Ne Bana Di Jodi</h2>
+                    <p>2008 • Rating: 7.1</p>
+                </div>
+            </li>
+            <li data-title="My Name is Khan" data-year="2010" data-rating="8.0">
+                <div class="film-info">
+                    <h2>My Name is Khan</h2>
+                    <p>2010 • Rating: 8.0</p>
+                </div>
+            
+            </li>
+            <li data-title="Don 2" data-year="2011" data-rating="7.1">
+                <div class="film-info">
+                    <h2>Don 2</h2>
+                    <p>2011 • Rating: 7.1</p>
+                </div>
+            </li>
+            <li data-title="Chennai Express" data-year="2013" data-rating="6.0" data-favourite="true">
+                <div class="film-info">
+                    <h2>Chennai Express</h2>
+                    <p>2013 • Rating: 6.0</p>
+                </div>
+            </li>
+            <li data-title="Happy New Year" data-year="2014" data-rating="5.3" data-favourite="true">
+                <div class="film-info">
+                    <h2>Happy New Year</h2>
+                    <p>2014 • Rating: 5.3</p>
+                </div>
+            </li>
+            <li data-title="Dilwale" data-year="2015" data-rating="6.0">
+                <div class="film-info">
+                    <h2>Dilwale</h2>
+                    <p>2015 • Rating: 6.0</p>
+                </div>
+            </li>
+            <li data-title="Raees" data-year="2017" data-rating="7.0" data-favourite="true">
+                <div class="film-info">
+                    <h2>Raees</h2>
+                    <p>2017 • Rating: 7.0</p>
+                </div>
+            </li>
+            <li data-title="Zero" data-year="2018" data-rating="5.8">
+                <div class="film-info">
+                    <h2>Zero</h2>
+                    <p>2018 • Rating: 5.8</p>
+                </div>
+            </li>
+            <li data-title="Pathaan" data-year="2023" data-rating="7.0">
+                <div class="film-info">
+                    <h2>Pathaan</h2>
+                    <p>2023 • Rating: 7.0</p>
+                </div>
+            </li>
+            <li data-title="Jawan" data-year="2023" data-rating="8.0" data-favourite="true" >
+                <div class="film-info">
+                    <h2>Jawan</h2>
+                    <p>2023 • Rating: 8.0</p>
+                </div>
+            </li>
+            <li data-title="Dunki" data-year="2023" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Dunki</h2>
+                    <p>2023 • Rating: N/A</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 id="popup-title"></h2>
+            <p id="popup-year"></p>
+            <p id="popup-rating"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="srk.js"></script>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh Babu Films</title>
+    <link rel="stylesheet" href="mb.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: burlywood;">Mahesh Babu Films</h1>
+        <div class="filter-container">
+            <select id="movie-filter">
+                <option value="all">All Movies</option>
+                <option value="favorites">Favorite Movies</option>
+                <option value="top-rated">Top Rated Movies</option>
+            </select>
+        </div>
+        <div class="bio" onclick="toggleBio()" style="color: whitesmoke; font-size: larger;">BIOGRAPHY</div>
+        <div class="bio-content" id="bio-content">
+            <p>Mahesh Babu is a prominent Indian film actor and producer known for his work in Telugu cinema. Born on August 9, 1975, he is the son of veteran actor Krishna. He made his acting debut as a child artist in 1979 and gained fame as a lead actor with films like 'Okkadu' and 'Pokiri', which became major box office successes. Mahesh Babu is known for his charm and versatility, and he has received several accolades, including multiple Nandi Awards and Filmfare Awards. He is one of the highest-paid actors in the industry and is often referred to as the 'Prince of Tollywood'.</p>
+        </div>
+        <ul id="film-list">
+            <li data-title="Rajakumarudu" data-year="1999" data-rating="7.5">
+                <div class="film-info">
+                    <h2>Rajakumarudu</h2>
+                    <p>1999 • Rating: 7.5</p>
+                </div>
+            </li>
+            <li data-title="Yuvaraju" data-year="2000" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Yuvaraju</h2>
+                    <p>2000 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Vamsi" data-year="2000" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Vamsi</h2>
+                    <p>2000 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Murari" data-year="2001" data-rating="7.8">
+                <div class="film-info">
+                    <h2>Murari</h2>
+                    <p>2001 • Rating: 7.8</p>
+                </div>
+            </li>
+            <li data-title="Takkari Donga" data-year="2002" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Takkari Donga</h2>
+                    <p>2002 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Bobby" data-year="2002" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Bobby</h2>
+                    <p>2002 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Okkadu" data-year="2003" data-rating="8.1">
+                <div class="film-info">
+                    <h2>Okkadu</h2>
+                    <p>2003 • Rating: 8.1</p>
+                </div>
+            </li>
+            <li data-title="Nijam" data-year="2003" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Nijam</h2>
+                    <p>2003 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Naani" data-year="2004" data-rating="7.2">
+                <div class="film-info">
+                    <h2>Naani</h2>
+                    <p>2004 • Rating: 7.2</p>
+                </div>
+            </li>
+            <li data-title="Arjun" data-year="2004" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Arjun</h2>
+                    <p>2004 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Athadu" data-year="2005" data-rating="8.2">
+                <div class="film-info">
+                    <h2>Athadu</h2>
+                    <p>2005 • Rating: 8.2</p>
+                </div>
+            </li>
+            <li data-title="Pokiri" data-year="2006" data-rating="8.0">
+                <div class="film-info">
+                    <h2>Pokiri</h2>
+                    <p>2006 • Rating: 8.0</p>
+                </div>
+            </li>
+            <li data-title="Sainikudu" data-year="2006" data-rating="6.5">
+                <div class="film-info">
+                    <h2>Sainikudu</h2>
+                    <p>2006 • Rating: 6.5</p>
+                </div>
+            </li>
+            <li data-title="Athidhi" data-year="2007" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Athidhi</h2>
+                    <p>2007 • Rating: N/A</p>
+                </div>
+            </li>
+            <li data-title="Khaleja" data-year="2010" data-rating="6.8">
+                <div class="film-info">
+                    <h2>Khaleja</h2>
+                    <p>2010 • Rating: 6.8</p>
+                </div>
+            </li>
+            <li data-title="Dookudu" data-year="2011" data-rating="7.8">
+                <div class="film-info">
+                    <h2>Dookudu</h2>
+                    <p>2011 • Rating: 7.8</p>
+                </div>
+            </li>
+            <li data-title="Businessman" data-year="2012" data-rating="7.5">
+                <div class="film-info">
+                    <h2>Businessman</h2>
+                    <p>2012 • Rating: 7.5</p>
+                </div>
+            </li>
+            <li data-title="Seethamma Vakitlo Sirimalle Chettu" data-year="2013" data-rating="8.0">
+                <div class="film-info">
+                    <h2>Seethamma Vakitlo Sirimalle Chettu</h2>
+                    <p>2013 • Rating: 8.0</p>
+                </div>
+            </li>
+            <li data-title="Aagadu" data-year="2014" data-rating="5.3">
+                <div class="film-info">
+                    <h2>Aagadu</h2>
+                    <p>2014 • Rating: 5.3</p>
+                </div>
+            </li>
+            <li data-title="Srimanthudu" data-year="2015" data-rating="7.7">
+                <div class="film-info">
+                    <h2>Srimanthudu</h2>
+                    <p>2015 • Rating: 7.7</p>
+                </div>
+            </li>
+            <li data-title="Brahmotsavam" data-year="2016" data-rating="6.0">
+                <div class="film-info">
+                    <h2>Brahmotsavam</h2>
+                    <p>2016 • Rating: 6.0</p>
+                </div>
+            </li>
+            <li data-title="Spyder" data-year="2017" data-rating="5.8">
+                <div class="film-info">
+                    <h2>Spyder</h2>
+                    <p>2017 • Rating: 5.8</p>
+                </div>
+            </li>
+            <li data-title="Bharat Ane Nenu" data-year="2018" data-rating="7.8">
+                <div class="film-info">
+                    <h2>Bharat Ane Nenu</h2>
+                    <p>2018 • Rating: 7.8</p>
+                </div>
+            </li>
+            <li data-title="Maharshi" data-year="2019" data-rating="7.6">
+                <div class="film-info">
+                    <h2>Maharshi</h2>
+                    <p>2019 • Rating: 7.6</p>
+                </div>
+            </li>
+            <li data-title="Sarileru Neekevvaru" data-year="2020" data-rating="7.0">
+                <div class="film-info">
+                    <h2>Sarileru Neekevvaru</h2>
+                    <p>2020 • Rating: 7.0</p>
+                </div>
+            </li>
+            <li data-title="Sarkaru Vaari Paata" data-year="2022" data-rating="6.8">
+                <div class="film-info">
+                    <h2>Sarkaru Vaari Paata</h2>
+                    <p>2022 • Rating: 6.8</p>
+                </div>
+            </li>
+            <li data-title="Guntur Kaaram" data-year="2024" data-rating="N/A">
+                <div class="film-info">
+                    <h2>Guntur Kaaram</h2>
+                    <p>2024 • Rating: N/A</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2 id="popup-title"></h2>
+            <p id="popup-year"></p>
+            <p id="popup-rating"></p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    
+    <script src="mb.js"></script>
+   
+</body>
+</html>
